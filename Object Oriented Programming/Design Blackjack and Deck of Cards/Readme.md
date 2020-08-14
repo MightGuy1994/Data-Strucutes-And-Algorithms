@@ -1,6 +1,6 @@
-#Design Blackjack and a Deck of cards#
+#Design Blackjack and a Deck of cards
 
-##Core Objects##
+##Core Objects
 >Card
 >BlackJackCard : Extends Card
 >Deck : Contains BlackJack Cards
