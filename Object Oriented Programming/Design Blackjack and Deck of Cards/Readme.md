@@ -1,21 +1,21 @@
 # Design Blackjack and a Deck of cards
 
 ## Core Objects
-  **Card
-  **BlackJackCard
+  **Card**
+  **BlackJackCard**
   >Extends Card
-  **Deck
+  **Deck**
   >Contains BlackJack Cards
-  **Shoe
+  **Shoe**
   >Contains Deck
-  **Game
+  **Game**
   >Contains Game logic
-  **Player
+  **Player**
   >Extends base player
-  **BasePlayer
+  **BasePlayer**
   >Actors information
-  **Dealer
+  **Dealer**
   >extends Base Player
-  **Hands
+  **Hands**
   >Contains Game cards
 
