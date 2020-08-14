@@ -4,9 +4,9 @@
   ### Card
   ### BlackJackCard
   >Extends Card
-  **Deck**
+  ### Deck
   >Contains BlackJack Cards
-  **Shoe**
+  ### shoe
   >Contains Deck
   **Game**
   >Contains Game logic
