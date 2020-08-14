@@ -1,8 +1,8 @@
 # Design Blackjack and a Deck of cards
 
 ## Core Objects
-  **Card**
-  **BlackJackCard**
+  ### Card
+  ### BlackJackCard
   >Extends Card
   **Deck**
   >Contains BlackJack Cards
