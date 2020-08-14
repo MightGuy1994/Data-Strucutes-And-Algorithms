@@ -1,4 +1,5 @@
-//simple dp algorithm. coin change: find minimum number of coins for a given amount.
+//simple dp algorithm. coin change: find minimum number of coins for a
+// given amount.
 // Read article and used dp bottom-up approach. calculate the less amount with min coins and sum up.
 // F(n) = Math.min(F(n-c1),F(n-c2),F(n-c3)....F(n-ci))+1;
 //TC = O(sn) where s is amount and n is coins.
