@@ -27,6 +27,10 @@ public class Game {
         }
         else {
             while(player.score() <21) {
+                if(player.score()==0){
+                    System.out.println("Player Lost");
+                    break;
+                }
                 System.out.println("Hit Or Stand?");
                 Scanner sc = new Scanner(System.in);
                 String response = sc.nextLine().toLowerCase();
@@ -50,10 +54,12 @@ public class Game {
         }
     }
     public void stand(){
-        System.out.println("Player Score : "+player.score());
-        System.out.println("Dealer Score : "+dealer.score());
+        //System.out.println("Player Score : "+player.score());
+        //System.out.println("Dealer Score : "+dealer.score());
         System.out.println("-------------------------------");
         if(dealer.score() >16){
+            System.out.println("Player Score : "+player.score());
+            System.out.println("Dealer Score : "+dealer.score());
             if(player.score() > dealer.score()){
                 System.out.println("Player WINS");
             }
@@ -69,11 +75,17 @@ public class Game {
                 BlackJackCard card = shoe.getCard();
                 dealer.getHand().addCard(card);
                 System.out.println("dealer Score : "+dealer.score());
+                if(dealer.score()==0){
+                    System.out.println("dealer Lost");
+                    break;
+                }
                 if(dealer.score() ==21){
                     System.out.println("Dealer wins");
+                    break;
                 }
                 else if(dealer.score()>21){
                     System.out.println("Player wins");
+                    break;
                 }
             }
         }
