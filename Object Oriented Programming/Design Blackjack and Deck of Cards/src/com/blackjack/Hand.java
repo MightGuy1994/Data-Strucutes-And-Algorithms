@@ -1,33 +1,49 @@
 package com.blackjack;
-
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class Hand {
-    private List<Card> cards;
-    private Integer value;
-    private boolean sameInitialCards = false;
-    Hand(Card card1,Card card2){
+    private List<BlackJackCard> cards;
+    Hand(BlackJackCard card1,BlackJackCard card2){
         cards = new ArrayList<>();
         cards.add(card1);
         cards.add(card2);
-        if(card1.getId().equals(card2.getId())){
-            sameInitialCards = true;
-        }
     }
 
-    public void addCard(Card card){
+    public void addCard(BlackJackCard card){
         cards.add(card);
     }
 
-    public int getScore(){
-        for(Card card: cards){
-            value += card.getId();
+    public List<Integer> getScore(){
+        List<Integer> totals = new ArrayList<>();
+        totals.add(0);
+        for(BlackJackCard card : cards){
+            List<Integer> newTotals = new ArrayList<>();
+            for(int score : totals){
+                newTotals.add(card.getId()+score);
+                if(card.getId() == 1){
+                    newTotals.add(11+score);
+                }
+            }
+            totals = newTotals;
         }
-        return value;
+        return totals;
     }
 
-    public boolean isSameInitialCards() {
-        return sameInitialCards;
+    public int resolveScore(){
+        List<Integer> scores = getScore();
+        int bestScore = 0;
+        for(int score : scores){
+            if(score<=21 && score > bestScore){
+                bestScore = score;
+            }
+        }
+        return bestScore;
+    }
+
+    public BlackJackCard randomCardValue(){
+        Random random = new Random();
+        return cards.get(random.nextInt(cards.size()));
     }
 }
