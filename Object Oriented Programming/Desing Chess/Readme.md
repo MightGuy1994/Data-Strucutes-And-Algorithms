@@ -1,2 +1,1 @@
-#Design Chess
-#
+# Design Chess
