@@ -62,7 +62,6 @@ class MinStack {
     }
 
     public int getMin() {
-
         return head.next.min;
     }
 }
