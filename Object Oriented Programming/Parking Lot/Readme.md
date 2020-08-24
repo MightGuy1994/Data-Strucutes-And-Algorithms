@@ -49,4 +49,4 @@
 	14. ParkingAttendantPortal
 
 ### Class Diagram
-	![alt text](https://github.com/AkulaKishore/Data-Strucutes-And-Algorithms/blob/dev/Object%20Oriented%20Programming/Parking%20Lot/image%20class%20diagram.jpeg)
+	![class diagram](https://github.com/AkulaKishore/Data-Strucutes-And-Algorithms/blob/dev/Object Oriented Programming/Parking Lot/image class diagram.jpeg)
