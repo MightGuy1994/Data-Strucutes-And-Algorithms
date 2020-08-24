@@ -16,8 +16,8 @@
 	11. Customer should pay ticket at CusotmerInfo Panel available on each parking floor
 
 
-##
- Use Cases
+## Use Cases
+
 ### Actors
 	1. Customer
 	2. Parking Attendant
@@ -49,3 +49,4 @@
 	14. ParkingAttendantPortal
 
 ### Class Diagram
+	![alt text](https://github.com/AkulaKishore/Data-Strucutes-And-Algorithms/blob/dev/Object%20Oriented%20Programming/Parking%20Lot/image%20class%20diagram.jpeg)
