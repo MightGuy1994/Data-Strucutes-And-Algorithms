@@ -3,17 +3,17 @@
 
 ## Functional Requirements
 
-1. A Customer should be able to generate a ticket
-2. A Customer should be able to pay ticket
-3. A parking lot should contain multiple parking floors
-4. Each Parking floor contains multiple parking slot types
-5. Each Parking floor must display available parking slots of each type
-6. Parking floor should contains slots with electric panels. Customer should be able to use and pay
-7. A parking lot should contain multiple entry and exit panels
-8. A parking attendant should do all customer can perform.
-9. The parking lot should have hourly system to calculate rate
-10. The System should accept card, cash payments
-11. Customer should pay ticket at CusotmerInfo Panel available on each parking floor
+	1. A Customer should be able to generate a ticket
+	2. A Customer should be able to pay ticket
+	3. A parking lot should contain multiple parking floors
+	4. Each Parking floor contains multiple parking slot types
+	5. Each Parking floor must display available parking slots of each type
+	6. Parking floor should contains slots with electric panels. Customer should be able to use and pay
+	7. A parking lot should contain multiple entry and exit panels
+	8. A parking attendant should do all customer can perform.
+	9. The parking lot should have hourly system to calculate rate
+	10. The System should accept card, cash payments
+	11. Customer should pay ticket at CusotmerInfo Panel available on each parking floor
 
 
 ##
